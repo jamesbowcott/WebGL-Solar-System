@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+ * James Bowcott (jab41@aber.ac.uk)
+ * CS323 Assignment 2014
+ * Aberystwyth University
+-->
+<html>
+    <head>
+        <title>James Bowcott CS323 Assignment</title>
+        <meta charset="UTF-8">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/lib/webgl-utils.js"></script>
+        <script type="text/javascript" src="js/lib/gl-matrix.js"></script>
+        <script type="text/javascript" src="js/models.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/gl.js"></script>
+        <script type="text/javascript" src="js/ui.js"></script>
+        <script type="text/javascript" src="js/solar.js"></script>
+    </head>
+    <body onload="onLoad();">
+        <canvas height="600" width="600" id="glcanvas"></canvas>
+        <div id="boxcontainer">
+        <div class="box">
+            <h3>View</h3>
+            <p>
+                <select id="selectBodies" onChange="uiSelectBodiesChanged();" ></select>
+            </p>
+            <h3>Solar System</h3>
+            <p>
+                <label for="rangeSpeed" id="labelRangeSpeed">Speed</label><br/>
+                <input type="range" id="rangeSpeed" min="0" max="2" step="0.001" onchange="uiRangeSpeedChanged(this);"/><br/>
+                <span id="uiSpanDaysPerSecond">?</span> days per second<br/>
+                <input type="checkbox" id="chkRotateBodies" onclick="uiOnClick(this);"/><label for="chkRotateBodies">Rotate Bodies</label><br/>
+                <input type="checkbox" id="chkDrawOrbits" onclick="uiOnClick(this);"/><label for="chkDrawOrbits">Draw Orbits</label><br/>
+            </p>
+            <h3>Graphics</h3>
+            <p>
+                <input type="checkbox" id="chkLighting" onclick="uiOnClick(this);"/><label for="chkLighting">Lighting</label><br/>
+                <input type="checkbox" id="chkBloom" onclick="uiOnClick(this);"/><label for="chkBloom">Bloom</label><br/>
+                <input type="checkbox" id="chkWireframe" onclick="uiOnClick(this);"/><label for="chkWireframe">Wireframe</label><br/>
+                <input type="checkbox" id="chkDrawAxes" onclick="uiOnClick(this);"/><label for="chkDrawAxes">Draw Axes</label><br/>
+                <input type="radio" id="rdoScreenScene" name="rdoScreen" onclick="uiOnClick(this);"/><label for="rdoScreenScene">Scene</label><br/>
+                <input type="radio" id="rdoScreenBloomscene" name="rdoScreen" onclick="uiOnClick(this);"/><label for="rdoScreenBloomscene">Bloom scene</label><br/>
+                <input type="radio" id="rdoScreenBloom" name="rdoScreen" onclick="uiOnClick(this);"/><label for="rdoScreenBloom">Bloom</label><br/>
+                <input type="radio" id="rdoScreenFinal" name="rdoScreen" onclick="uiOnClick(this);" checked /><label for="rdoScreenFinal">Final composite</label><br/>
+            </p>
+        </div>        
+        <div class="box" id="uiBoxCamera">
+            <h3>Camera</h3>
+            <p>
+                Distance: <span id="uiCameraDisplayDistance">0</span><br/>
+                Pitch: <span id="uiCameraDisplayPitch">0</span><br/>
+                Yaw: <span id="uiCameraDisplayYaw">0</span><br/>
+            </p>
+        </div>
+        </div>
+        <span class="footer"><a href="mailto:jab41@aber.ac.uk">James Bowcott 2014</a></span>
+    </body>
+</html>

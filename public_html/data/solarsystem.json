@@ -1,0 +1,224 @@
+{
+    "Sun": {
+        "radius": 25000,
+        "days": 25.38,
+        "tilt": 7.25,
+        "textures": {
+            "base": {
+                "image": "sunmap.jpg"
+            }
+        },
+        "satellites": {
+            "Mercury": {
+                "radius": 2439,
+                "days": 58.6462,
+                "tilt": 0, 
+                "orbit": {
+                    "semimajoraxis": 0.38709927,
+                    "eccentricity": 0.20563593,
+                    "inclination": 7.00497902,
+                    "meanlon": 252.25032350,
+                    "perihelion": 77.45779628,
+                    "ascendingnode": 48.33076593,
+                    "years": 0.2408467,
+                    "days": 87.91
+                },
+                "textures": {
+                    "base": {
+                        "image": "mercurymap.jpg"
+                    }
+                }
+            },
+            "Venus": {
+                "radius": 6051,
+                "days": -243.018,
+                "tilt": 117.36,
+                "orbit": {
+                    "semimajoraxis": 0.72333566,
+                    "eccentricity": 0.00677672,
+                    "inclination": 3.39467605,
+                    "meanlon": 181.97909950,
+                    "perihelion": 131.60246718,
+                    "ascendingnode": 76.67984255,
+                    "years": 0.61519726,
+                    "days": 224.54
+                },
+                "textures": {
+                    "base": {
+                        "image": "venusmap.jpg"
+                    }
+                }
+            },
+            "Earth": {
+                "radius": 6378,
+                "days": 0.99726968,
+                "tilt": 23.4,
+                "orbit": {
+                    "semimajoraxis": 1.00000261,
+                    "eccentricity": 0.01671123,
+                    "inclination": -0.00001531,
+                    "meanlon": 100.46457166,
+                    "perihelion": 102.93768193,
+                    "ascendingnode": 0.0,
+                    "years": 1.0000174,
+                    "days": 365
+                },
+                "textures": {
+                    "day": {
+                        "image": "earthmap.jpg"
+                    },
+                    "night": {
+                        "image": "earthnightmap.jpg"
+                    },
+                    "specular": {"image": "earthspecmap.jpg"}
+                },
+                "satellites": {
+                    "Moon": {
+                        "radius": 1737,
+                        "days": 27.322,
+                        "tilt": 6.68,
+                        "orbit": {
+                            "REALsemimajoraxis": 0.00256955529,
+                            "semimajoraxis": 0.1,
+                            "eccentricity": 0.0054,
+                            "inclination": 5.16,
+                            "meanlon": 0,
+                            "perihelion": 318.15,
+                            "ascendingnode": 125.08,
+                            "days": 27.322
+                        },
+                        "textures": {
+                            "base": {
+                                "image": "moon.gif"
+                            }
+                        }
+                    }
+                }
+            },
+            "Mars": {
+                "radius": 3396,
+                "days": 1.02595676,
+                "tilt": 25.19,
+                "orbit": {
+                    "semimajoraxis": 1.52371034,
+                    "eccentricity": 0.09339410,
+                    "inclination": 1.84969142,
+                    "meanlon": -4.55343205,
+                    "perihelion": -23.94362959,
+                    "ascendingnode": 49.55953891,
+                    "years": 1.8808476,
+                    "days": 686.51
+                },
+                "textures": {
+                    "base": {
+                        "image": "marsmap.jpg"
+                    }
+                }
+            },
+            "Jupiter": {
+                "radius": 71492,
+                "days": 0.41354,
+                "tilt": 3.13,
+                "orbit": {
+                    "semimajoraxis": 5.20288700,
+                    "eccentricity": 0.04838624,
+                    "inclination": 1.30439695,
+                    "meanlon": 34.39644051,
+                    "perihelion": 14.72847983,
+                    "ascendingnode": 100.47390909,
+                    "years": 11.862615,
+                    "days": 4329.85
+                },
+                "textures": {
+                    "base": {
+                        "image": "jupitermap.jpg"
+                    }
+                }
+            },
+            "Saturn": {
+                "radius": 60268,
+                "days": 0.44401,
+                "tilt": 26.73,
+                "rings": {
+                    "radius": 240000
+                },
+                "orbit": {
+                    "semimajoraxis": 9.53667594,
+                    "eccentricity": 0.05386179,
+                    "inclination": 2.48599187,
+                    "meanlon": 49.95424423,
+                    "perihelion": 92.59887831,
+                    "ascendingnode": 113.66242448,
+                    "years": 29.447498,
+                    "days": 10748.33
+                },
+                "textures": {
+                    "base": {
+                        "image": "saturnmap.jpg"
+                    },
+                    "rings": {"image": "saturnrings.png"}
+                }
+            },
+            "Uranus": {
+                "radius": 25559,
+                "days": -0.71833,
+                "tilt": 97.77,
+                "orbit": {
+                    "semimajoraxis": 19.18916464,
+                    "eccentricity": 0.04725744,
+                    "inclination": 0.77263783,
+                    "meanlon": 313.23810451,
+                    "perihelion": 170.95427630,
+                    "ascendingnode": 74.01692503,
+                    "years": 84.016846,
+                    "days": 30666.15
+                },
+                "textures": {
+                    "base": {
+                        "image": "uranusmap.jpg"
+                    }
+                }
+            },
+            "Neptune": {
+                "radius": 24764,
+                "days": 0.67125,
+                "tilt": 28.32,
+                "orbit": {
+                    "semimajoraxis": 30.06992276,
+                    "eccentricity": 0.00859048,
+                    "inclination": 1.77004347,
+                    "meanlon": -55.12002969,
+                    "perihelion": 44.96476227,
+                    "ascendingnode": 131.78422574,
+                    "years": 164.79132,
+                    "days": 60148.83
+                },
+                "textures": {
+                    "base": {
+                        "image": "neptunemap.jpg"
+                    }
+                }
+            },
+            "Pluto": {
+                "radius": 1151,
+                "days": -6.3872,
+                "tilt": 122.53,
+                "orbit": {
+                    "semimajoraxis": 39.48211675,
+                    "eccentricity": 0.24882730,
+                    "inclination": 17.14001206,
+                    "meanlon": 238.92903833,
+                    "perihelion": 224.06891629,
+                    "ascendingnode": 110.30393684,
+                    "years": 247.92065,
+                    "days": 90491.03
+                },
+                "textures": {
+                    "base": {
+                        "image": "plutomap.jpg"
+                    }
+                }
+            }
+        }
+    }
+}
