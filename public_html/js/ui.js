@@ -19,7 +19,7 @@ function initUI() {
     canvas.onmousedown = uiCanvasMouseDown;
     document.onmouseup = uiCanvasMouseUp;
     document.onmousemove = uiCanvasMouseMove;
-    canvas.addEventListener("mousewheel", function(event){
+    canvas.addEventListener("wheel", function(event){
         uiCanvasMouseWheel(event);
         event.preventDefault();
         return false;
@@ -52,7 +52,7 @@ function uiCanvasMouseMove(event) {
 }
 
 function uiCanvasMouseWheel(event) {
-    var delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
+    var delta = Math.max(-1, Math.min(1, (event.deltaY || -event.detail)));
     glCamera.distance += delta * Math.max(0,glCamera.distance * uiOptions.zoomScaler);
     glCamera.distance = Math.min(1500, Math.max(glCamera.distance, 0));
     return false;
